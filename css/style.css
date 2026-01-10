@@ -652,3 +652,136 @@ a {
     align-items: flex-start;
   }
 }
+
+.detail-hero {
+  background: linear-gradient(120deg, rgba(248, 200, 220, 0.35) 0%, rgba(255, 255, 255, 0.95) 70%);
+  padding: 70px 0 60px;
+}
+
+.detail-hero .breadcrumb {
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-size: 0.95rem;
+}
+
+.detail-hero .breadcrumb a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.detail-hero-content h1 {
+  font-size: clamp(2.1rem, 3.5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.model-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.model-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background-color: rgba(248, 200, 220, 0.35);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.overview-card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.overview-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 28px;
+}
+
+.overview-list li {
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.overview-list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--pink-dark);
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.overview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.detail-alt {
+  background-color: rgba(248, 200, 220, 0.18);
+}
+
+.detail-card {
+  background-color: var(--white);
+  padding: 26px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
+.detail-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.spec-table table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.spec-table thead th {
+  background-color: rgba(248, 200, 220, 0.4);
+  font-weight: 600;
+  border: none;
+}
+
+.spec-table td,
+.spec-table th {
+  padding: 14px 16px;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.spec-sub {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.spec-note {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+  .overview-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
