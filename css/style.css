@@ -300,6 +300,14 @@ a {
   height: 100%;
 }
 
+.product-card-image {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  height: 250px;
+  object-fit: contain;
+  background-color: rgba(248, 200, 220, 0.2);
+}
+
 .product-card .card-title {
   font-weight: 600;
   margin-bottom: 10px;
