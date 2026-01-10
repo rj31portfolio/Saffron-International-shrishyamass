@@ -259,6 +259,64 @@ a {
   box-shadow: var(--shadow);
 }
 
+.category-hero {
+  background: linear-gradient(120deg, rgba(248, 200, 220, 0.25) 0%, rgba(255, 255, 255, 0.9) 65%);
+  padding: 60px 0 50px;
+}
+
+.category-hero .breadcrumb {
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-size: 0.95rem;
+}
+
+.category-hero .breadcrumb a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.category-hero .breadcrumb-item.active {
+  color: var(--muted);
+}
+
+.category-hero-content h1 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.category-kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--pink-dark);
+}
+
+.product-card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+
+.product-card .card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-card .card-text {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.product-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
 .category-card {
   border: none;
   border-radius: var(--radius);
