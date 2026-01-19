@@ -90,3 +90,72 @@ const duplicateLogos = () => {
 };
 
 duplicateLogos();
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const formData = new FormData(contactForm);
+    const payload = Object.fromEntries(formData.entries());
+    const submitButton = contactForm.querySelector("button[type=\"submit\"]");
+    const requiredFields = ["name", "email", "subject", "message"];
+    const missingField = requiredFields.find((field) => {
+      return !payload[field] || String(payload[field]).trim() === "";
+    });
+
+    if (missingField) {
+      const errorMessage = "Please fill out all required fields.";
+      if (window.Swal) {
+        Swal.fire("Missing info", errorMessage, "warning");
+      } else {
+        alert(errorMessage);
+      }
+      return;
+    }
+
+    if (submitButton) {
+      submitButton.disabled = true;
+    }
+
+    try {
+      const response = await fetch("contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const responseText = await response.text();
+      let data = null;
+      if (responseText) {
+        try {
+          data = JSON.parse(responseText);
+        } catch (parseError) {
+          throw new Error("Unexpected response from server.");
+        }
+      }
+      if (!response.ok || !data || !data.success) {
+        const serverMessage = data && data.message ? data.message : "Unable to send message.";
+        const extraInfo = data && data.error ? ` (${data.error})` : "";
+        throw new Error(serverMessage + extraInfo);
+      }
+      contactForm.reset();
+      if (window.Swal) {
+        Swal.fire("Sent!", "Your message has been sent successfully.", "success");
+      } else {
+        alert("Your message has been sent successfully.");
+      }
+    } catch (error) {
+      if (window.Swal) {
+        Swal.fire("Error", error.message || "Unable to send message.", "error");
+      } else {
+        alert("Unable to send message.");
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+      }
+    }
+  });
+}
