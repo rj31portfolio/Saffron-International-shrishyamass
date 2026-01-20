@@ -53,11 +53,11 @@ $phone_clean = preg_replace('/[^0-9+\-\s]/', '', $phone) ?? '';
 // ===== SMTP CONFIG (REPLACE THESE) =====
 $SMTP_HOST = 'smtp.gmail.com';
 $SMTP_PORT = 587; // 587 for TLS, 465 for SSL
-$SMTP_USER = 'info.errajuali@gmail.com';
-$SMTP_PASS = 'oqgs qaiw penx dbgh';
+$SMTP_USER = 'shrishyamasuperservice@gmail.com';
+$SMTP_PASS = 'lvtd piiu tvtr qaby';
 $SMTP_SECURE = PHPMailer::ENCRYPTION_STARTTLS; // or PHPMailer::ENCRYPTION_SMTPS
 
-$TO_EMAIL = 'info.errajuali@gmail.com';
+$TO_EMAIL = 'shrishyamasuperservice@gmail.com';
 $TO_NAME  = 'Website Enquiries';
 $TO_EMAIL_SECONDARY = 'info@saffroninternational.in';
 $TO_NAME_SECONDARY  = 'Saffron International';
