@@ -6,11 +6,18 @@ use PHPMailer\PHPMailer\Exception;
 
 require __DIR__ . '/vendor/autoload.php';
 
+ini_set('display_errors', '0');
+error_reporting(E_ALL);
+ob_start();
+
 /**
  * Always JSON response
  */
 function respond(bool $ok, string $message, int $statusCode = 200, array $extra = []): void {
   http_response_code($statusCode);
+  if (ob_get_length()) {
+    ob_clean();
+  }
   header('Content-Type: application/json; charset=utf-8');
   echo json_encode(array_merge([
     'success' => $ok,

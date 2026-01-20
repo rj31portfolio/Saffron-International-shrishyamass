@@ -140,10 +140,7 @@ if (contactForm) {
     try {
       const response = await fetch("contact.php", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
+        body: formData,
       });
 
       const responseText = await response.text();
