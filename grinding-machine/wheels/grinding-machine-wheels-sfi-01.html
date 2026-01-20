@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grinding Machine / Wheels SFI-01 | Saffron International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    .gallery-main {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #f7f7f7;
+      padding: 16px;
+    }
+    .gallery-main img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .thumbnail-row {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .thumbnail-btn {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 4px;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+    .thumbnail-btn img {
+      width: 88px;
+      height: 72px;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+    .thumbnail-btn.active {
+      border-color: #1f9254;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../../index.html#home">
+          <img src="../../images/Saffron.jpg" alt="Company Logo" class="logo" />
+          <span class="brand-text ms-2">Saffron International</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../../index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../index.html#about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../../index.html#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu product-dropdown">
+                <li><a class="dropdown-item" href="../../spring-forming-machines.html">Spring Forming Machines</a></li>
+                <li><a class="dropdown-item" href="../../wire-bending-machines.html">Wire Bending Machines</a></li>
+                <li><a class="dropdown-item" href="../../coiling-machines.html">Coiling Machines</a></li>
+                <li><a class="dropdown-item" href="../../special-purpose-machine.html">Special Purpose Machines</a></li>
+                <li><a class="dropdown-item" href="../../grinding-machines.html">Grinding Machines / Grinding Wheels</a></li>
+                <li><a class="dropdown-item" href="../../index.html#categories">Furnace Machines</a></li>
+                <li><a class="dropdown-item" href="../../index.html#categories">Controllers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../../index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../index.html#contact">Contact</a></li>
+          </ul>
+          <div class="nav-contact d-none d-lg-flex align-items-center">
+            <a href="https://saffroninternational.in/pdf/Catalog.pdf" class="contact-phone" download>
+              <i class="fa-solid fa-file-pdf"></i> Brochure
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html#home">Home</a></li>
+            <li class="breadcrumb-item"><a href="../../grinding-machines.html">Grinding Machines / Grinding Wheels</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Grinding Machine / Wheels</li>
+          </ol>
+        </nav>
+        <div class="detail-hero-content">
+          <span class="category-kicker">Grinding Machines / Wheels</span>
+          <h1>Grinding Machine / Wheels</h1>
+          <p>Model SFI-01 designed for accurate spring end grinding and consistent surface finish.</p>
+          <div class="model-tags">
+            <span class="model-pill">SFI-01</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-6">
+            <div class="gallery-main">
+              <img id="productMainImage" src="../../images/grinding-machine/1.png" alt="Grinding Machine / Wheels SFI-01" />
+            </div>
+            <div class="thumbnail-row" id="thumbnailRow">
+              <button class="thumbnail-btn active" type="button" data-image="../../images/grinding-machine/1.png">
+                <img src="../../images/grinding-machine/1.png" alt="Grinding Machine front view" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../../images/grinding-machine/2.png">
+                <img src="../../images/grinding-machine/2.png" alt="Grinding Machine side view" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../../images/grinding-machine/3.png">
+                <img src="../../images/grinding-machine/3.png" alt="Grinding Machine detail view" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Precision grinding for spring ends</h2>
+            <p>
+              SLM series CNC spring end grinding machine is mainly used for grinding the double sides of
+              compression springs (including cylindrical springs, conical springs, and double conical springs).
+              The machine uses two upright grinding wheels with adjustable feeding speed and height control,
+              allowing the spring to reach a preset height and achieve maximum grinding capacity according to
+              pressure settings. It includes self-compensation, self-reset, and alarm functions. Human-machine
+              interaction enables programming via the screen for easy operation and higher productivity.
+            </p>
+            <div class="overview-actions">
+              <a href="../../index.html#contact" class="btn btn-primary">Request Quote</a>
+              <a href="../../grinding-machines.html" class="btn btn-outline-secondary">Back to Category</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Specification</h2>
+          <p>Reference specification image extracted from the catalog.</p>
+        </div>
+        <div class="table-responsive spec-table">
+          <table class="table table-bordered align-middle text-center">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>SLM180-6B</th>
+                <th>SLM180-6B-S</th>
+                <th>SLM250-9B</th>
+                <th>SLM250-9B-S</th>
+                <th>SLM600-9B</th>
+                <th>SLM250-12B</th>
+                <th>SLM400-12B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Specification of Grinding Wheel</td>
+                <td>Phi 400 x 55</td>
+                <td>Phi 400 x 55 x Phi 203</td>
+                <td>Phi 450 x 65</td>
+                <td>Phi 450 x 65 x Phi 50</td>
+                <td>Phi 450 x 65</td>
+                <td>Phi 600 x 100 x Phi 170</td>
+                <td>Phi 600 x 100 x Phi 170</td>
+              </tr>
+              <tr>
+                <td>Diameter of Feeding Plate (mm)</td>
+                <td>Phi 580</td>
+                <td>Phi 420</td>
+                <td>Phi 740</td>
+                <td>Phi 580</td>
+                <td>Phi 740</td>
+                <td>Phi 740</td>
+                <td>Phi 740</td>
+              </tr>
+              <tr>
+                <td>Wire Diameter (mm)</td>
+                <td>Phi 0.8 - Phi 6</td>
+                <td>Phi 0.8 - Phi 6</td>
+                <td>Phi 1 - Phi 9</td>
+                <td>Phi 1 - Phi 9</td>
+                <td>Phi 1 - Phi 9</td>
+                <td>Phi 3 - Phi 12</td>
+                <td>Phi 3 - Phi 12</td>
+              </tr>
+              <tr>
+                <td>Spring Outside Diameter (mm)</td>
+                <td>Phi 8 - Phi 80</td>
+                <td>Phi 8 - Phi 80</td>
+                <td>Phi 10 - Phi 100</td>
+                <td>Phi 10 - Phi 100</td>
+                <td>Phi 10 - Phi 100</td>
+                <td>Phi 20 - Phi 130</td>
+                <td>Phi 20 - Phi 130</td>
+              </tr>
+              <tr>
+                <td>Spring Height (mm)</td>
+                <td>10 - 180</td>
+                <td>10 - 180</td>
+                <td>20 - 250</td>
+                <td>20 - 250</td>
+                <td>300 - 600</td>
+                <td>20 - 250</td>
+                <td>150 - 400</td>
+              </tr>
+              <tr>
+                <td>Machine Dimension (mm)</td>
+                <td>2050 x 1660 x 2120</td>
+                <td>2050 x 2060 x 2120</td>
+                <td>2215 x 1900 x 2400</td>
+                <td>2215 x 2265 x 2400</td>
+                <td>2215 x 2000 x 2850</td>
+                <td>2600 x 2100 x 2800</td>
+                <td>2600 x 2100 x 3060</td>
+              </tr>
+              <tr>
+                <td>Upper Grinding Wheel Motor (kw)</td>
+                <td>4</td>
+                <td>4</td>
+                <td>5.5</td>
+                <td>5.5</td>
+                <td>7.5</td>
+                <td>12.5</td>
+                <td>12.5</td>
+              </tr>
+              <tr>
+                <td>Lower Grinding Wheel Motor (kw)</td>
+                <td>4</td>
+                <td>4</td>
+                <td>5.5</td>
+                <td>5.5</td>
+                <td>7.5</td>
+                <td>12.5</td>
+                <td>12.5</td>
+              </tr>
+              <tr>
+                <td>Feeding Plate Motor (kw)</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Switch Feeding Plate Motor (kw)</td>
+                <td>/</td>
+                <td>1.5</td>
+                <td>/</td>
+                <td>1.5</td>
+                <td>/</td>
+                <td>/</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Elevating Motor of Upper Grinding Wheel (kw)</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>2.2</td>
+                <td>2.2</td>
+              </tr>
+              <tr>
+                <td>Elevating Motor of Lower Grinding Wheel (kw)</td>
+                <td>0.18</td>
+                <td>0.18</td>
+                <td>0.18</td>
+                <td>0.18</td>
+                <td>0.18</td>
+                <td>0.37</td>
+                <td>0.37</td>
+              </tr>
+              <tr>
+                <td>Air Blower (kw)</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5</td>
+                <td>1.5 x 2</td>
+                <td>1.5 x 2</td>
+                <td>1.5 x 2</td>
+              </tr>
+              <tr>
+                <td>Compensated Motor of Upper Grinding Wheel (kw)</td>
+                <td>0.14</td>
+                <td>0.14</td>
+                <td>0.14</td>
+                <td>0.14</td>
+                <td>0.14</td>
+                <td>0.14</td>
+                <td>0.14</td>
+              </tr>
+              <tr>
+                <td>Total Power (kw)</td>
+                <td>12.82</td>
+                <td>14.32</td>
+                <td>15.82</td>
+                <td>17.32</td>
+                <td>21.32</td>
+                <td>33.71</td>
+                <td>33.71</td>
+              </tr>
+              <tr>
+                <td>Rotation Rate of the Feeding Plate (r/min)</td>
+                <td>Adjustable</td>
+                <td>Adjustable</td>
+                <td>Adjustable</td>
+                <td>Adjustable</td>
+                <td>Adjustable</td>
+                <td>Adjustable</td>
+                <td>Adjustable</td>
+              </tr>
+              <tr>
+                <td>Rotation Rate of the Grinding Head (r/min)</td>
+                <td>1450</td>
+                <td>1450</td>
+                <td>1450</td>
+                <td>1450</td>
+                <td>1450</td>
+                <td>965</td>
+                <td>965</td>
+              </tr>
+              <tr>
+                <td>Upper Grinding Head Displacement Distance (mm)</td>
+                <td>180</td>
+                <td>180</td>
+                <td>250</td>
+                <td>250</td>
+                <td>250</td>
+                <td>250</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td>Lower Grinding Head Displacement Distance (mm)</td>
+                <td>40</td>
+                <td>40</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>70</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>Verticality (Ho)</td>
+                <td>&lt;= 0.025</td>
+                <td>&lt;= 0.025</td>
+                <td>&lt;= 0.025</td>
+                <td>&lt;= 0.025</td>
+                <td>&lt;= 0.025</td>
+                <td>&lt;= 0.025</td>
+                <td>&lt;= 0.025</td>
+              </tr>
+              <tr>
+                <td>Roughness (Ra)</td>
+                <td>&lt;= 12.5</td>
+                <td>&lt;= 12.5</td>
+                <td>&lt;= 12.5</td>
+                <td>&lt;= 12.5</td>
+                <td>&lt;= 12.5</td>
+                <td>&lt;= 12.5</td>
+                <td>&lt;= 12.5</td>
+              </tr>
+              <tr>
+                <td>Power Source</td>
+                <td>3-phase 380V AC 50HZ</td>
+                <td>3-phase 380V AC 50HZ</td>
+                <td>3-phase 380V AC 50HZ</td>
+                <td>3-phase 380V AC 50HZ</td>
+                <td>3-phase 380V AC 50HZ</td>
+                <td>3-phase 380V AC 50HZ</td>
+                <td>3-phase 380V AC 50HZ</td>
+              </tr>
+              <tr>
+                <td>Net Weight of the Machine (kg)</td>
+                <td>2200</td>
+                <td>2500</td>
+                <td>2800</td>
+                <td>3500</td>
+                <td>4500</td>
+                <td>5500</td>
+                <td>6000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>Shri Shyama Super Services</h5>
+          <p>We will develop to be a leading supplier enterprise in the industry, based in Delhi, India with
+            openness and confidence and steady development.
+          </p>
+          <a href="../../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../index.html#services">Our Services</a></li>
+            <li><a href="../../index.html#contact">Contact Us</a></li>
+            <li><a href="../../index.html#testimonials">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="../../index.html#services">Installation</a></li>
+            <li><a href="../../index.html#services">Maintenance</a></li>
+            <li><a href="../../index.html#services">Custom Solutions</a></li>
+            <li><a href="../../index.html#services">Spare Parts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Contact</h6>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Khasra No. 230 Nangli Sakrawati, Industrial Area, Najafgarh, New Delhi</li>
+            <li><i class="fa-solid fa-phone"></i> +91 8700335277</li>
+            <li><i class="fa-solid fa-phone"></i> +91 8178392837</li>
+            <li><i class="fa-solid fa-envelope"></i> info@saffroninternational.in</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>@ 2026 Shri Shyama Super Services. All Rights Reserved.</p>
+        <div class="footer-policy">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer-credit">Developed By: <span>Viral Ads Media</span></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const mainImage = document.getElementById("productMainImage");
+    const thumbRow = document.getElementById("thumbnailRow");
+    if (mainImage && thumbRow) {
+      thumbRow.addEventListener("click", (event) => {
+        const button = event.target.closest(".thumbnail-btn");
+        if (!button) {
+          return;
+        }
+        const image = button.getAttribute("data-image");
+        if (!image) {
+          return;
+        }
+        mainImage.src = image;
+        thumbRow.querySelectorAll(".thumbnail-btn").forEach((item) => {
+          item.classList.toggle("active", item === button);
+        });
+      });
+    }
+  </script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
