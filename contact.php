@@ -61,7 +61,7 @@ $phone_clean = preg_replace('/[^0-9+\-\s]/', '', $phone) ?? '';
 $SMTP_HOST = 'smtp.gmail.com';
 $SMTP_PORT = 587; // 587 for TLS, 465 for SSL
 $SMTP_USER = 'shrishyamasuperservice@gmail.com';
-$SMTP_PASS = 'lvtd piiu tvtr qaby';
+$SMTP_PASS = 'saje fbup nbhp ofgs';
 $SMTP_SECURE = PHPMailer::ENCRYPTION_STARTTLS; // or PHPMailer::ENCRYPTION_SMTPS
 
 $TO_EMAIL = 'shrishyamasuperservice@gmail.com';
@@ -119,3 +119,5 @@ try {
     'error' => $e->getMessage()
   ]);
 }
+
+
