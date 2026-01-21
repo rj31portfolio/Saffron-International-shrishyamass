@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furnance SFI-01 | Saffron International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .gallery-main {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #f7f7f7;
+      padding: 16px;
+    }
+    .gallery-main img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .thumbnail-row {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .thumbnail-btn {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 4px;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+    .thumbnail-btn img {
+      width: 88px;
+      height: 72px;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+    .thumbnail-btn.active {
+      border-color: #1f9254;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html#home">
+          <img src="../images/Saffron.jpg" alt="Company Logo" class="logo" />
+          <span class="brand-text ms-2">Saffron International</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../index.html#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu product-dropdown">
+                <li><a class="dropdown-item" href="../spring-forming-machines.html">Spring Forming Machines</a></li>
+                <li><a class="dropdown-item" href="../wire-bending-machines.html">Wire Bending Machines</a></li>
+                <li><a class="dropdown-item" href="../coiling-machines.html">Coiling Machines</a></li>
+                <li><a class="dropdown-item" href="../special-purpose-machine.html">Special Purpose Machines</a></li>
+                <li><a class="dropdown-item" href="../grinding-machines.html">Grinding Machines / Grinding Wheels</a></li>
+                <li><a class="dropdown-item" href="../furnance-machines.html">Furnace Machines</a></li>
+                <li><a class="dropdown-item" href="../index.html#categories">Controllers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+          </ul>
+          <div class="nav-contact d-none d-lg-flex align-items-center">
+            <a href="https://saffroninternational.in/pdf/Catalog.pdf" class="contact-phone" download>
+              <i class="fa-solid fa-file-pdf"></i> Brochure
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html#home">Home</a></li>
+            <li class="breadcrumb-item"><a href="../furnance-machines.html">Furnace Machines</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Furnance</li>
+          </ol>
+        </nav>
+        <div class="detail-hero-content">
+          <span class="category-kicker">Furnace Machines</span>
+          <h1>Furnance</h1>
+          <p>Model SFI-01 combines rotary retort, pit-type, car-bottom, and box-type furnace solutions.</p>
+          <div class="model-tags">
+            <span class="model-pill">SFI-01</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-6">
+            <div class="gallery-main">
+              <img id="productMainImage" src="../images/furnance/1.png" alt="Furnance SFI-01" />
+            </div>
+            <div class="thumbnail-row" id="thumbnailRow">
+              <button class="thumbnail-btn active" type="button" data-image="../images/furnance/1.png">
+                <img src="../images/furnance/1.png" alt="Furnance machine view 1" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/furnance/2.png">
+                <img src="../images/furnance/2.png" alt="Furnance machine view 2" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/furnance/3.png">
+                <img src="../images/furnance/3.png" alt="Furnance machine view 3" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/furnance/4.png">
+                <img src="../images/furnance/4.png" alt="Rotary retort type furnance" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/furnance/5.png">
+                <img src="../images/furnance/5.png" alt="Pit-type furnance" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/furnance/6.png">
+                <img src="../images/furnance/6.png" alt="Car-bottom furnance" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/furnance/7.png">
+                <img src="../images/furnance/7.png" alt="Box-type furnance" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Heat treatment built for production flow</h2>
+            <p>
+              The SFI-01 furnance range covers rotary retort type furnaces for uniform heating, pit-type furnaces
+              for vertical loading, car-bottom furnaces for heavy parts, and box-type furnaces for batch heat
+              treatment. Each configuration is engineered for steady temperature control and repeatable output.
+            </p>
+            <div class="overview-actions">
+              <a href="../index.html#contact" class="btn btn-primary">Request Quote</a>
+              <a href="../furnance-machines.html" class="btn btn-outline-secondary">Back to Category</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Specification</h2>
+          <p>Specification extracted from the provided reference image.</p>
+        </div>
+        <div class="table-responsive spec-table">
+          <table class="table table-bordered align-middle text-center">
+            <thead>
+              <tr>
+                <th rowspan="2">Models</th>
+                <th colspan="3">Outside Dimensions (mm)</th>
+                <th colspan="3">Hearth Dimensions (mm)</th>
+                <th rowspan="2">Power (kw)</th>
+                <th rowspan="2">Max. Temperature (C)</th>
+                <th rowspan="2">Tempering Time (min)</th>
+                <th rowspan="2">Diameter of Tempered Pieces (mm)</th>
+                <th rowspan="2">Output of Tempered Pieces (kg/h)</th>
+                <th rowspan="2">Weight (kg)</th>
+              </tr>
+              <tr>
+                <th>L</th>
+                <th>W</th>
+                <th>H</th>
+                <th>L</th>
+                <th>W</th>
+                <th>H</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>RJC206</td>
+                <td>1600</td>
+                <td>750</td>
+                <td>1300</td>
+                <td>600</td>
+                <td>200</td>
+                <td>60</td>
+                <td>6</td>
+                <td>500</td>
+                <td>1.5-20</td>
+                <td>0.1-3</td>
+                <td>10-20</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td>RJC210</td>
+                <td>2000</td>
+                <td>750</td>
+                <td>1300</td>
+                <td>1000</td>
+                <td>200</td>
+                <td>90</td>
+                <td>8</td>
+                <td>500</td>
+                <td>2.5-40</td>
+                <td>0.1-6</td>
+                <td>18-25</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>RJC215</td>
+                <td>2600</td>
+                <td>750</td>
+                <td>1300</td>
+                <td>1500</td>
+                <td>200</td>
+                <td>90</td>
+                <td>12</td>
+                <td>500</td>
+                <td>4-50</td>
+                <td>0.1-6</td>
+                <td>25-35</td>
+                <td>350</td>
+              </tr>
+              <tr>
+                <td>RJC315</td>
+                <td>2600</td>
+                <td>850</td>
+                <td>1320</td>
+                <td>1500</td>
+                <td>300</td>
+                <td>90</td>
+                <td>16</td>
+                <td>500</td>
+                <td>4-50</td>
+                <td>0.1-6</td>
+                <td>35-50</td>
+                <td>750</td>
+              </tr>
+              <tr>
+                <td>RJC320</td>
+                <td>3300</td>
+                <td>850</td>
+                <td>1400</td>
+                <td>2000</td>
+                <td>300</td>
+                <td>90</td>
+                <td>20</td>
+                <td>500</td>
+                <td>6-60</td>
+                <td>0.1-6</td>
+                <td>50-70</td>
+                <td>950</td>
+              </tr>
+              <tr>
+                <td>RJC420</td>
+                <td>3300</td>
+                <td>950</td>
+                <td>1400</td>
+                <td>2000</td>
+                <td>400</td>
+                <td>90</td>
+                <td>26</td>
+                <td>500</td>
+                <td>6-60</td>
+                <td>0.5-6</td>
+                <td>60-80</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>RJC425</td>
+                <td>3900</td>
+                <td>950</td>
+                <td>1400</td>
+                <td>2500</td>
+                <td>400</td>
+                <td>100</td>
+                <td>30</td>
+                <td>500</td>
+                <td>6-60</td>
+                <td>0.5-6</td>
+                <td>70-90</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>RJC430</td>
+                <td>4400</td>
+                <td>950</td>
+                <td>1500</td>
+                <td>3000</td>
+                <td>400</td>
+                <td>100</td>
+                <td>35</td>
+                <td>500</td>
+                <td>8-60</td>
+                <td>0.5-6</td>
+                <td>80-120</td>
+                <td>1300</td>
+              </tr>
+              <tr>
+                <td>RJC440</td>
+                <td>6100</td>
+                <td>1050</td>
+                <td>1600</td>
+                <td>4000</td>
+                <td>400</td>
+                <td>120</td>
+                <td>52</td>
+                <td>500</td>
+                <td>12-60</td>
+                <td>1-12</td>
+                <td>130-180</td>
+                <td>2200</td>
+              </tr>
+              <tr>
+                <td>RJC520</td>
+                <td>4100</td>
+                <td>1100</td>
+                <td>1800</td>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>35</td>
+                <td>500</td>
+                <td>8-50</td>
+                <td>0.5-10</td>
+                <td>80-100</td>
+                <td>1400</td>
+              </tr>
+              <tr>
+                <td>RJC530</td>
+                <td>5100</td>
+                <td>1100</td>
+                <td>1950</td>
+                <td>3000</td>
+                <td>500</td>
+                <td>120</td>
+                <td>45</td>
+                <td>500</td>
+                <td>10-60</td>
+                <td>0.5-10</td>
+                <td>150-180</td>
+                <td>1800</td>
+              </tr>
+              <tr>
+                <td>RJC540</td>
+                <td>6100</td>
+                <td>1100</td>
+                <td>1950</td>
+                <td>4000</td>
+                <td>500</td>
+                <td>130</td>
+                <td>60</td>
+                <td>500</td>
+                <td>12-60</td>
+                <td>1-14</td>
+                <td>200-250</td>
+                <td>2400</td>
+              </tr>
+              <tr>
+                <td>RJC550</td>
+                <td>7100</td>
+                <td>1100</td>
+                <td>1950</td>
+                <td>5000</td>
+                <td>500</td>
+                <td>130</td>
+                <td>75</td>
+                <td>500</td>
+                <td>14-90</td>
+                <td>1-16</td>
+                <td>250-300</td>
+                <td>2800</td>
+              </tr>
+              <tr>
+                <td>RJC560</td>
+                <td>8100</td>
+                <td>1100</td>
+                <td>1950</td>
+                <td>6000</td>
+                <td>500</td>
+                <td>150</td>
+                <td>90</td>
+                <td>500</td>
+                <td>14-90</td>
+                <td>1-16</td>
+                <td>300-500</td>
+                <td>3600</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>Shri Shyama Super Services</h5>
+          <p>We will develop to be a leading supplier enterprise in the industry, based in Delhi, India with
+            openness and confidence and steady development.
+          </p>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#services">Our Services</a></li>
+            <li><a href="../index.html#contact">Contact Us</a></li>
+            <li><a href="../index.html#testimonials">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html#services">Installation</a></li>
+            <li><a href="../index.html#services">Maintenance</a></li>
+            <li><a href="../index.html#services">Custom Solutions</a></li>
+            <li><a href="../index.html#services">Spare Parts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Contact</h6>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Khasra No. 230 Nangli Sakrawati, Industrial Area, Najafgarh, New Delhi</li>
+            <li><i class="fa-solid fa-phone"></i> +91 8700335277</li>
+            <li><i class="fa-solid fa-phone"></i> +91 8178392837</li>
+            <li><i class="fa-solid fa-envelope"></i> info@saffroninternational.in</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>@ 2026 Shri Shyama Super Services. All Rights Reserved.</p>
+        <div class="footer-policy">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer-credit">Developed By: <span>Viral Ads Media</span></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const mainImage = document.getElementById("productMainImage");
+    const thumbRow = document.getElementById("thumbnailRow");
+    if (mainImage && thumbRow) {
+      thumbRow.addEventListener("click", (event) => {
+        const button = event.target.closest(".thumbnail-btn");
+        if (!button) {
+          return;
+        }
+        const image = button.getAttribute("data-image");
+        if (!image) {
+          return;
+        }
+        mainImage.src = image;
+        thumbRow.querySelectorAll(".thumbnail-btn").forEach((item) => {
+          item.classList.toggle("active", item === button);
+        });
+      });
+    }
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
