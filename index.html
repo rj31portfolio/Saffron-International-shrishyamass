@@ -445,7 +445,6 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const contactForm = document.getElementById("contactForm");
-
     if (contactForm) {
       contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -488,7 +487,6 @@
             const serverMessage = data && data.message ? data.message : "Failed to send message.";
             throw new Error(serverMessage);
           }
-
           contactForm.reset();
           if (window.Swal) {
             Swal.fire("Sent!", "Message sent successfully.", "success");
@@ -508,7 +506,7 @@
         }
       });
     }
-  </script>
+</script>
   <script defer src="js/main.js"></script>
 </body>
 </html>
