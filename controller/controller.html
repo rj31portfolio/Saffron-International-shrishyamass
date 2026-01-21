@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controller | Saffron International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .gallery-main {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #f7f7f7;
+      padding: 16px;
+    }
+    .gallery-main img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      background: #fff;
+    }
+    .thumbnail-row {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .thumbnail-btn {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 4px;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+    .thumbnail-btn img {
+      width: 88px;
+      height: 72px;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+    .thumbnail-btn.active {
+      border-color: #1f9254;
+    }
+    .detail-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    .detail-list {
+      padding-left: 18px;
+    }
+    .detail-list li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html#home">
+          <img src="../images/Saffron.jpg" alt="Company Logo" class="logo" />
+          <span class="brand-text ms-2">Saffron International</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../index.html#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu product-dropdown">
+                <li><a class="dropdown-item" href="../spring-forming-machines.html">Spring Forming Machines</a></li>
+                <li><a class="dropdown-item" href="../wire-bending-machines.html">Wire Bending Machines</a></li>
+                <li><a class="dropdown-item" href="../coiling-machines.html">Coiling Machines</a></li>
+                <li><a class="dropdown-item" href="../special-purpose-machine.html">Special Purpose Machines</a></li>
+                <li><a class="dropdown-item" href="../grinding-machines.html">Grinding Machines / Grinding Wheels</a></li>
+                <li><a class="dropdown-item" href="../furnance-machines.html">Furnace Machines</a></li>
+                <li><a class="dropdown-item" href="../index.html#categories">Controllers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+          </ul>
+          <div class="nav-contact d-none d-lg-flex align-items-center">
+            <a href="https://saffroninternational.in/pdf/Catalog.pdf" class="contact-phone" download>
+              <i class="fa-solid fa-file-pdf"></i> Brochure
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html#home">Home</a></li>
+            <li class="breadcrumb-item"><a href="../index.html#categories">Controllers</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Controller</li>
+          </ol>
+        </nav>
+        <div class="detail-hero-content">
+          <span class="category-kicker">Controllers</span>
+          <h1>Controller</h1>
+          <p>Integrated controller systems for high-speed wire forming, spring coiling, and multi-axis automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-6">
+            <div class="gallery-main">
+              <img id="productMainImage" src="../images/controller/1.png" alt="Controller main display" />
+            </div>
+            <div class="thumbnail-row" id="thumbnailRow">
+              <button class="thumbnail-btn active" type="button" data-image="../images/controller/1.png">
+                <img src="../images/controller/1.png" alt="Controller console view" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/2.png">
+                <img src="../images/controller/2.png" alt="Controller display unit" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/3.png">
+                <img src="../images/controller/3.png" alt="HMI panel display" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/4.png">
+                <img src="../images/controller/4.png" alt="SMC5000 controller modules" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/5.png">
+                <img src="../images/controller/5.png" alt="Controller module detail" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/6.png">
+                <img src="../images/controller/6.png" alt="Handwheel pendant" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/7.png">
+                <img src="../images/controller/7.png" alt="Touchscreen HMI panel" />
+              </button>
+              <button class="thumbnail-btn" type="button" data-image="../images/controller/8.png">
+                <img src="../images/controller/8.png" alt="Controller application output" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>High-performance control for demanding production</h2>
+            <p>
+              Our controller lineup is engineered for stable multi-axis synchronization, fast cycle times,
+              and dependable operation in high-temperature, high-dust industrial environments. Flexible I/O,
+              rich communication interfaces, and a modern HMI platform enable accurate motion control, fast
+              setup, and remote monitoring for wire forming and spring manufacturing lines.
+            </p>
+            <div class="overview-actions">
+              <a href="../index.html#contact" class="btn btn-primary">Request Quote</a>
+              <a href="../index.html#categories" class="btn btn-outline-secondary">Back to Category</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Performance Highlights</h2>
+          <p>Key benefits extracted from the provided reference material.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="detail-card h-100">
+              <h5>Control & Connectivity</h5>
+              <ul class="detail-list">
+                <li>Adaptive multi-axis synchronization with speed priority control.</li>
+                <li>Integrated length gauge and feedback correction for consistent output.</li>
+                <li>On-site I/O programming and 3D wire simulation support.</li>
+                <li>Remote device management and remote desktop capability.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="detail-card h-100">
+              <h5>HMI & Hardware</h5>
+              <ul class="detail-list">
+                <li>High-brightness 17-inch LCD with reinforced touchscreen.</li>
+                <li>Low-power ARM CPU with fanless cooling for harsh environments.</li>
+                <li>Optional 2G/4G global communication module for remote control.</li>
+                <li>Handwheel pendant with emergency stop and programmable keys.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Controller I/O Specification</h2>
+          <p>SMC series input, output, and communication specification.</p>
+        </div>
+        <div class="table-responsive spec-table">
+          <table class="table table-bordered align-middle text-center">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>SMC5008</th>
+                <th>SMC5014S</th>
+                <th>SMC5016</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DI input</td>
+                <td>32</td>
+                <td>48</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td>DO output</td>
+                <td>24</td>
+                <td>39</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td>AI analog input</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>AO-Vdd analog output</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Servo Pulse Pulse servo axis</td>
+                <td>8</td>
+                <td>14</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>Servo Bus Bus servo axis</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Encode encoder</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>EtherCAT</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>RTEX</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Ethernet</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>USB</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>CAN</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>RS422</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>RS485</td>
+                <td>2</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Cycle</td>
+                <td>Sri500</td>
+                <td>400 μS</td>
+                <td>400 μS</td>
+              </tr>
+              <tr>
+                <td>Interpolation algorithm</td>
+                <td>Support</td>
+                <td>Support</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td>Multi-axis synchronization</td>
+                <td>Support</td>
+                <td>Sync/Speed</td>
+                <td>Sync/Speed</td>
+              </tr>
+              <tr>
+                <td>Integrated Inspector</td>
+                <td>-</td>
+                <td>Visual/capacitive</td>
+                <td>Visual/capacitive</td>
+              </tr>
+              <tr>
+                <td>Graphical programming</td>
+                <td>Support</td>
+                <td>Support</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td>IO field programming</td>
+                <td>Support</td>
+                <td>Support</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td>Log function</td>
+                <td>Support</td>
+                <td>Support</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td>Remote desktop</td>
+                <td>Support</td>
+                <td>Support</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td>Remote device</td>
+                <td>Support</td>
+                <td>Support</td>
+                <td>Support</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Display Specifications</h2>
+          <p>WirHMI series display hardware specification.</p>
+        </div>
+        <div class="table-responsive spec-table">
+          <table class="table table-bordered align-middle text-center">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>WirHMI-170-40</th>
+                <th>WirHMI-0170-30</th>
+                <th>WirHMI-0170-20</th>
+                <th>WirHMI-0170-10</th>
+                <th>WirHMI-0170-00</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CPU</td>
+                <td>ARM 1GHz</td>
+                <td>ARM 600MHz</td>
+                <td>ARM 600MHz</td>
+                <td>ARM 600MHz</td>
+                <td>ARM 600MHz</td>
+              </tr>
+              <tr>
+                <td>Memory</td>
+                <td>512MB</td>
+                <td>128MB</td>
+                <td>128MB</td>
+                <td>128MB</td>
+                <td>128MB</td>
+              </tr>
+              <tr>
+                <td>Flash</td>
+                <td>512MB</td>
+                <td>128MB</td>
+                <td>128MB</td>
+                <td>128MB</td>
+                <td>128MB</td>
+              </tr>
+              <tr>
+                <td>SD</td>
+                <td>64G (Optional)</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+              </tr>
+              <tr>
+                <td>Size</td>
+                <td>17.0"</td>
+                <td>17.0"</td>
+                <td>17.0"</td>
+                <td>17.0"</td>
+                <td>17.0"</td>
+              </tr>
+              <tr>
+                <td>Resolution</td>
+                <td>1280x1024</td>
+                <td>1280x1024</td>
+                <td>1280x1024</td>
+                <td>1280x1024</td>
+                <td>1280x1024</td>
+              </tr>
+              <tr>
+                <td>Backlight source</td>
+                <td>LED</td>
+                <td>LED</td>
+                <td>LED</td>
+                <td>LED</td>
+                <td>LED</td>
+              </tr>
+              <tr>
+                <td>Touchscreen</td>
+                <td>NA</td>
+                <td>Resistive</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+              </tr>
+              <tr>
+                <td>Touch the button</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>64</td>
+              </tr>
+              <tr>
+                <td>Indicator light</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Universal keyboard</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Mouse</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Ethernet</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>RS422</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>RS485</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>RS232</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>USB</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Wireless Communications</td>
+                <td>2G/4G Global frequency bands</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+              </tr>
+              <tr>
+                <td>Operating system</td>
+                <td>Linux OS</td>
+                <td>Linux OS</td>
+                <td>Linux OS</td>
+                <td>Linux OS</td>
+                <td>Linux OS</td>
+              </tr>
+              <tr>
+                <td>UI system</td>
+                <td>Arcuchi WinDraw</td>
+                <td>Arcuchi WinDraw</td>
+                <td>Arcuchi WinDraw</td>
+                <td>Arcuchi WinDraw</td>
+                <td>Arcuchi WinDraw</td>
+              </tr>
+              <tr>
+                <td>Remote device management</td>
+                <td>Support</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>Shri Shyama Super Services</h5>
+          <p>We will develop to be a leading supplier enterprise in the industry, based in Delhi, India with
+            openness and confidence and steady development.
+          </p>
+          <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#services">Our Services</a></li>
+            <li><a href="../index.html#contact">Contact Us</a></li>
+            <li><a href="../index.html#testimonials">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="../index.html#services">Installation</a></li>
+            <li><a href="../index.html#services">Maintenance</a></li>
+            <li><a href="../index.html#services">Custom Solutions</a></li>
+            <li><a href="../index.html#services">Spare Parts</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Contact</h6>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Khasra No. 230 Nangli Sakrawati, Industrial Area, Najafgarh, New Delhi</li>
+            <li><i class="fa-solid fa-phone"></i> +91 8700335277</li>
+            <li><i class="fa-solid fa-phone"></i> +91 8178392837</li>
+            <li><i class="fa-solid fa-envelope"></i> info@saffroninternational.in</li>
+          </ul>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>@ 2026 Shri Shyama Super Services. All Rights Reserved.</p>
+        <div class="footer-policy">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer-credit">Developed By: <span>Viral Ads Media</span></div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const mainImage = document.getElementById("productMainImage");
+    const thumbRow = document.getElementById("thumbnailRow");
+    if (mainImage && thumbRow) {
+      thumbRow.addEventListener("click", (event) => {
+        const button = event.target.closest(".thumbnail-btn");
+        if (!button) {
+          return;
+        }
+        const image = button.getAttribute("data-image");
+        if (!image) {
+          return;
+        }
+        mainImage.src = image;
+        thumbRow.querySelectorAll(".thumbnail-btn").forEach((item) => {
+          item.classList.toggle("active", item === button);
+        });
+      });
+    }
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
